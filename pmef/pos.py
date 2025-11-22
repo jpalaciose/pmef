@@ -255,7 +255,7 @@ def plot2D_deform(up,defo,cnx,ax,color='RdYlGn_r',bar_label='Resultados',logo=Tr
     else: print('pmef no soporta el mesh proporcionado para la gráfica.')
     ax.tricontourf(triangulation, up, cmap=color, alpha=1.0,levels=50)
     norm = colors.Normalize(vmin=min(up), vmax=max(up))
-    plt.colorbar(matplotlib.cm.ScalarMappable(norm=norm, cmap=color),
+    plt.colorbar(matplotlib.cm.ScalarMappable(norm=norm, cmap=color),ax=ax,
                     orientation='vertical',label=bar_label)
     if elems==True:
         graph(defo,cnx,ax,logo=logo,labels=labels)
