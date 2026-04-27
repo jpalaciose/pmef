@@ -1,7 +1,7 @@
 ## PMEF
 ## Programando el Método de Elementos Finitos
 
-PMEF es una librería desarrollada para enseñar a Programar el Método de Elementos Finitos mediante el curso online de JPI Ingeniería (https://jpi-ingenieria.com).
+PMEF es una librería desarrollada para enseñar a Programar el Método de Elementos Finitos utilizando Python. Para mayor informacion revisar el curso online de JPI Ingeniería (https://jpi-ingenieria.com/python_ingenieria.html).
 
 Tutorial de uso de la librería PMEF: https://youtu.be/FPDJ2ilrcLA?si=A0bdWErDodMjx04f
 
