@@ -473,15 +473,15 @@ def ShapeFunction(X,gp,tipo):
         print("Debes programar para el tipo %s aún"%tipo)
     
     # Calculamos la matriz jacobiana y su determinante
-    try: j
-    except NameError:
-        J=dN@X
-        if len(J) >1: 
-            j = abs(det(J))
-            dN = inv(J)@dN
-        else:
-            j = abs(J[0])
-            dN = dN/j
+    J=dN@X
+    if len(J) >1:
+        j = abs(det(J))
+        if j==0.0: print("Cuidado: El Jacobiano es 0!")
+        dN = inv(J)@dN
+    else:
+        j = abs(J[0])
+        if j==0.0: print("Cuidado: El Jacobiano es 0!")
+        dN = dN/j
     if j<0: 
         print("Cuidado: El jacobiano es negativo!")
         # print(X,'\n',dN,'\n',J,'\n',j)
