@@ -1,4 +1,6 @@
 from numpy import zeros, array, average, append, delete, insert, arange, hstack
+import urllib.request
+from PIL import Image
 import matplotlib.pyplot as plt
 import matplotlib.image as image
 import matplotlib.colors as colors
@@ -162,7 +164,8 @@ def graph(x,cnx,ax,color='k',d=0.01,logo=True,labels=False):
     if logo == True:
         xrng, yrng = plt.xlim(),plt.ylim()
         L = min(xrng[1]-xrng[0],yrng[1]-yrng[0])
-        im = image.imread('https://jpi-ingenieria.com/images/logoJPI.png')
+        url = 'https://jpi-ingenieria.com/images/logoJPI.png'
+        im = array(Image.open(urllib.request.urlopen(url)))
         ax.imshow(im,aspect='auto',extent=(xrng[0], xrng[0]+0.2*L, yrng[0], yrng[0]+0.2*L), zorder=10,alpha=0.7)
 
     if len(x.shape)==1:
