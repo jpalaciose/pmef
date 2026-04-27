@@ -1,23 +1,37 @@
-Metadata-Version: 1.0
+Metadata-Version: 2.4
 Name: pmef
-Version: 0.5.4
+Version: 0.5.7
 Summary: Librería para aprender a Programar el Método de Elementos Finitos
 Home-page: https://github.com/Julian-Palacios/pmef
 Author: Julian Palacios, Jorge Lulimachi, Luis Baldeon y Humberto Rojas
 Author-email: jpalaciose@uni.pe
 License: GPL-3.0
-Description: ## PMEF
-        ## Programando el Método de Elementos Finitos
-        
-        PMEF es una librería desarrollada para enseñar a Programar el Método de Elementos Finitos mediante el curso online de JPI Ingeniería (https://jpi-ingenieria.com).
-        
-        Códigos creados en Python en el año 2020 por Julian Palacios (jpalaciose@uni.pe), con la colaboración de:
-        
-        - Jorge Lulimachi (jlulimachis@uni.pe)
-        - Luis Baldeon (luis.baldeon.c@uni.pe)
-        - Humberto Rojas (humberto.rojas.h@uni.pe)
-        
-        Cabe resaltar que parte de los códigos se basó en las rutinas de matlab FEMCode realizado por Garth N .Wells (2005) para la clase CT5123 en TU Delft, Países Bajos.
-        
 Keywords: Elementos Finitos,Funciones de Forma,Mapeo Isoparamétrico
-Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: meshio
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+## PMEF
+## Programando el MÃ©todo de Elementos Finitos
+
+PMEF es una librerÃ­a desarrollada para enseÃ±ar a Programar el MÃ©todo de Elementos Finitos utilizando Python. Para mayor informacion revisar el curso online de JPI IngenierÃ­a (https://jpi-ingenieria.com/python_ingenieria.html).
+
+Tutorial de uso de la librerÃ­a PMEF: https://youtu.be/FPDJ2ilrcLA?si=A0bdWErDodMjx04f
+
+CÃ³digos creados en Python en el aÃ±o 2020 por Julian Palacios (jpalaciose@uni.pe), con la colaboraciÃ³n de:
+- Jorge Lulimachi (jlulimachis@uni.pe)
+- Luis Baldeon (luis.baldeon.c@uni.pe)
+- Humberto Rojas (humberto.rojas.h@uni.pe)
+
+Cabe resaltar que parte de los cÃ³digos se basÃ³ en las rutinas de matlab FEMCode realizado por Garth N .Wells (2005) para la clase CT5123 en TU Delft, PaÃ­ses Bajos.
